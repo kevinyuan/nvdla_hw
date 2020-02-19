@@ -1,4 +1,32 @@
-# NVDLA Open Source Hardware
+# NVDLA Open Source Hardware with Achronix Speedster7t1500 Implmentation
+
+## Check out
+>git clone https://github.com/kevinyuan/nvdla_hw.git
+>cd nvdla_hw
+>git checkout master
+
+## Synthsis 
+
+1. [NVDLA Environment Setup Guide](http://nvdla.org/hw/v2/environment_setup_guide.html) Please follow this document to setup tools and dependency libraries
+>vim tree.make # Edit your environment paths
+>./tools/bin/tmake -build vmod
+>./tools/bin/tmake -build ready_for_test
+>./tools/bin/tmake -build verif_protection
+>./tools/bin/tmake -build cmod_top
+
+2. In SynplifyPro, open project acx/syn/nvdla.prj
+
+3. Run rev_NV_NVDLA_partition_a/c/m/o/p to generate *.vm netlists. You don't need to synthesis the top level rev_NV_nvdla.
+
+## PnR
+
+1. In ACE, load project acx/ace/nvdla.acxprj
+
+2. Run default impl_1.
+
+########### ORIGINAL README  ##################
+
+# NVDLA Open Source Hardware, version 1.0
 ---
 
 ## NVDLA
