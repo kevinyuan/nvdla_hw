@@ -1,5 +1,9 @@
 # NVDLA Open Source Hardware with Achronix Speedster7t1500 Implmentation
 
+## Software requirements
+* Acrhonix ACE 8.1+
+* SynplifyPro 2019.03X, Achronix OEM version
+
 ## Check out
 ```
   >git clone https://github.com/kevinyuan/nvdla_hw.git
